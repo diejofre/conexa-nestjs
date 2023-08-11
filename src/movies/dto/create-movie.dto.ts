@@ -1,22 +1,25 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateMovieDto {
-  @ApiProperty({ example: 'A New Hope' })
+  @ApiProperty({ example: 'The Force Awakens' })
   title: string;
 
-  @ApiProperty({ example: 4 })
+  @ApiProperty({ example: 7 })
   episode_id: number;
 
-  @ApiProperty({ example: 'It is a period of civil war.' })
+  @ApiProperty({
+    example:
+      'Luke Skywalker has vanished. In his absence, the sinister FIRST ORDER has risen from ...',
+  })
   opening_crawl: string;
 
-  @ApiProperty({ example: 'George Lucas' })
+  @ApiProperty({ example: 'J. J. Abrams' })
   director: string;
 
-  @ApiProperty({ example: 'Gary Kurtz, Rick McCallum' })
+  @ApiProperty({ example: 'Bryan Burk, Bad Robot' })
   producer: string;
 
-  @ApiProperty({ example: '1977-05-25' })
+  @ApiProperty({ example: '2015-12-17' })
   release_date: string;
 
   @ApiProperty({ example: ['https://swapi.dev/api/people/1/'] })
