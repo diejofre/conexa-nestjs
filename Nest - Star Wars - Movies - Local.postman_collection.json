@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "55424066-f1d4-40bd-88f9-b477388612ab",
-		"name": "Nest - Star Wars - Movies",
+		"_postman_id": "6e9178fe-f854-4e5a-87f5-76b3dab60205",
+		"name": "Nest - Star Wars - Movies - Local",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -12,7 +12,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiX2lkIjoiNjRkNWNmMzg4M2ZmNTkyZDRlODM3YTZiIiwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsInBhc3N3b3JkIjoiJDJiJDEwJEdPdWQ2YkVUcHdNdXpSUzVXSVpnWC5sUzVSZk10NUMyUFNnbVhMNVF5NVVOZWh0WDFLakF1Iiwicm9sZXMiOlsidXNlciJdLCJfX3YiOjB9LCJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE2OTE3MzM4MjMsImV4cCI6MTY5MTczNDQyM30.EmkpDIzHMqgX2CjPg_ssN41IFYp7z3DuXv5fkUX5hTY",
+						"value": "Bearer <access_token>",
 						"type": "default"
 					}
 				],
@@ -205,7 +205,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiX2lkIjoiNjRkNWRiYmQ2MDVjODI5ODA5MTQ5ZDNlIiwidXNlcm5hbWUiOiJ0ZXN0dXNlcmFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTAkYS5DL0Q0a0xYWVRGc0tjYld0WldodW9vQU45VXBjeUdnUEJzMjBQQjRQSjhUOTRNbW5nTmkiLCJyb2xlcyI6WyJhZG1pbiJdLCJfX3YiOjB9LCJ1c2VybmFtZSI6InRlc3R1c2VyYWRtaW4iLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2OTE3MzcwMjksImV4cCI6MTY5MTczNzYyOX0.0gAtCowlMYJb-qbHjACZnkskTnGIOVgPGgKgSEz3CJg",
+						"value": "Bearer <access_token>",
 						"type": "default"
 					}
 				],

@@ -29,10 +29,10 @@ Then set each variable on `.env`:
 
 - `MONGO_URI` should be the MongoDB connection string you got from step 1.
 
-## Deploy on Render
+## Deploy on Cyclic
 
-This app was deployed on Render App: https://conexa-api-challenge.onrender.com/ and the database is hosted on MongoDB Atlas.
+This app was deployed on Cyclic App: https://dull-erin-barnacle-suit.cyclic.app and the database is hosted on MongoDB Atlas.
 
 ## API Documentation
 
-This API was documented using Swagger, you can see the documentation on: https://conexa-api-challenge.onrender.com/api-docs/. Also, you can test the API with the collection of request called `Nest - Star Wars - Movies.postman_collection.json` allocated in the root of the project.
+This API was documented using Swagger, you can see the documentation on: https://conexa-api-challenge.onrender.com/api-docs/. Also, you can test the local API with the collection of request called `Nest - Star Wars - Movies - Local.postman_collection.json`. The deployed API can be tested with the collection of request called `Nest - Star Wars - Movies - Deploy.postman_collection.json`. Both collections are allocated in the root of the project.
