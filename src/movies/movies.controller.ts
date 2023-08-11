@@ -18,7 +18,7 @@ import { ApiParam, ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
 import { ParseObjectIdPipe } from '../utils/parseObjectIdPipe.pipe';
 import { HasRoles } from 'src/auth/has-roles.decorator';
-import { Role } from 'src/model/role.enum';
+import { Role } from '../schemas/user.schema';
 import { RolesGuard } from 'src/auth/roles.guard';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 

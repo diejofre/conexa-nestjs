@@ -1,9 +1,14 @@
+import { IsNumber, IsString, IsNotEmpty } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateMovieDto {
+  @IsString()
+  @IsNotEmpty()
   @ApiProperty({ example: 'The Force Awakens' })
   title: string;
 
+  @IsNumber()
+  @IsNotEmpty()
   @ApiProperty({ example: 7 })
   episode_id: number;
 

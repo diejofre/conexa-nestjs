@@ -4,7 +4,7 @@ import { User } from '../schemas/user.schema';
 import * as bcrypt from 'bcrypt';
 import { Public } from 'src/auth/auth.decorator';
 import { ApiTags } from '@nestjs/swagger';
-import { Role } from 'src/model/role.enum';
+import { CreateUserDto } from './dto/create-user-dto';
 
 @ApiTags('auth')
 @Controller('auth')
@@ -13,17 +13,16 @@ export class UsersController {
 
   @Public()
   @Post('/signup')
-  async createUser(
-    @Body('password') password: string,
-    @Body('username') username: string,
-    @Body('roles') roles: Role[],
-  ): Promise<User> {
+  async createUser(@Body() createUserDto: CreateUserDto): Promise<User> {
     const saltOrRounds = 10;
-    const hashedPassword = await bcrypt.hash(password, saltOrRounds);
+    const hashedPassword = await bcrypt.hash(
+      createUserDto.password,
+      saltOrRounds,
+    );
     const result = await this.usersService.createUser(
-      username,
+      createUserDto.username,
       hashedPassword,
-      roles,
+      createUserDto.roles,
     );
     return result;
   }
